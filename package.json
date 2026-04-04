@@ -1,0 +1,10 @@
+{
+  "name": "security-plus-review",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run server.ts",
+    "start": "bun run server.ts"
+  },
+  "dependencies": {}
+}

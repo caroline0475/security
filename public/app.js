@@ -443,6 +443,99 @@ const QUIZZES = {
       explanation: "A crucial part of strategy is considering BOTH the red (adversary) and blue (defender) perspectives. Strategy is not just management or leadership (those contribute but aren't strategy). It must be proactive ('Act, not React') and consider external threats."
     }
   ],
+  "book-ch1": [
+    { q: "Jade's organization recently suffered a security breach affecting stored credit card data. Her primary concern is violating PCI DSS provisions. What category of risk is concerning Jade?",
+      options: ["Strategic", "Compliance", "Operational", "Financial"], correct: 1,
+      explanation: "The breach of credit card information may cause many different risks, but Jade's primary concern is violating PCI DSS, making it a compliance risk." },
+    { q: "Chris is responding to a security incident where attackers defaced pages on the organization's website. What cybersecurity objective did this attack violate?",
+      options: ["Confidentiality", "Nonrepudiation", "Integrity", "Availability"], correct: 2,
+      explanation: "Defacement alters content without authorization \u2014 a violation of integrity. The attackers may also have breached confidentiality or availability, but the scenario specifically describes content alteration." },
+    { q: "Tonya is searching for a control that would discourage an attacker from attempting to gain access to her database server. What type of security control is she seeking?",
+      options: ["Preventive", "Detective", "Corrective", "Deterrent"], correct: 3,
+      explanation: "Deterrent controls discourage attackers from attempting to violate security policies. Preventive controls block attacks in progress. Corrective controls remediate issues. Detective controls detect indicators." },
+    { q: "Greg is implementing a DLP system to protect against sensitive data transmissions by guests on his wireless network. What DLP technology would best meet this goal?",
+      options: ["Watermarking", "Pattern recognition", "Host-based", "Network-based"], correct: 3,
+      explanation: "Network-based DLP is needed because host-based DLP requires agents installed on endpoints, which wouldn't exist on guest systems. Network-based DLP monitors traffic regardless of the source device." },
+    { q: "What term best describes data that is being sent between two systems over a network connection?",
+      options: ["Data at rest", "Data in transit", "Data in processing", "Data in use"], correct: 1,
+      explanation: "Data in transit (also called data in motion) describes information being transmitted over a network. Data at rest is stored data. Data in use/processing is actively being accessed by an application." },
+    { q: "Tina is tuning her organization's intrusion prevention system to prevent false positive alerts. What type of control is Tina implementing?",
+      options: ["Technical control", "Physical control", "Managerial control", "Operational control"], correct: 0,
+      explanation: "An intrusion prevention system is a technical (logical) control. Technical controls use technology to protect assets. Physical controls are tangible mechanisms. Managerial and operational controls are procedural." },
+    { q: "Which one of the following is NOT a common goal of a cybersecurity attacker?",
+      options: ["Disclosure", "Denial", "Alteration", "Allocation"], correct: 3,
+      explanation: "The three primary goals of attackers are Disclosure, Alteration, and Denial \u2014 mapping to the CIA triad (Confidentiality, Integrity, Availability). Allocation is not a common attack goal." },
+    { q: "Tony believes that a compromise of the file server could prevent the company from continuing to do business. What type of risk is Tony considering?",
+      options: ["Strategic", "Reputational", "Financial", "Operational"], correct: 0,
+      explanation: "A risk that could prevent the company from continuing business is a strategic risk \u2014 it threatens the organization's ability to carry out its mission and strategy." },
+    { q: "What technology uses mathematical algorithms to render information unreadable to those lacking the required key?",
+      options: ["Data loss prevention", "Data obfuscation", "Data minimization", "Data encryption"], correct: 3,
+      explanation: "Data encryption uses mathematical algorithms (ciphers) to transform readable data into unreadable ciphertext. Only those with the proper decryption key can reverse the process." },
+    { q: "Which data protection technique is reversible when conducted properly?",
+      options: ["Tokenization", "Masking", "Hashing", "Shredding"], correct: 0,
+      explanation: "Tokenization uses a lookup table and is designed to be reversible. Masking and hashing replace data with values that can't be reversed. Shredding physically destroys data permanently." },
+    { q: "Which compliance regulation most directly affects the operations of a health-care provider?",
+      options: ["HIPAA", "PCI DSS", "GLBA", "SOX"], correct: 0,
+      explanation: "HIPAA (Health Insurance Portability and Accountability Act) directly regulates security and privacy of protected health information. PCI DSS covers payment cards, GLBA covers financial institutions, SOX covers financial reporting." },
+    { q: "Attackers stole thousands of customer records from the organization's database. What cybersecurity principle was most impacted?",
+      options: ["Availability", "Nonrepudiation", "Confidentiality", "Integrity"], correct: 2,
+      explanation: "The disclosure of sensitive information to unauthorized individuals is a violation of confidentiality. The stolen customer records represent unauthorized access to private data." },
+  ],
+  "book-ch2": [
+    { q: "Which one of the following attackers is most likely to be associated with an APT?",
+      options: ["Nation-state actor", "Hacktivist", "Unskilled attacker", "Insider"], correct: 0,
+      explanation: "Advanced Persistent Threats (APTs) are most commonly associated with nation-state actors who have the resources, sophistication, and patience required for long-term targeted operations." },
+    { q: "Which organization did the U.S. government help create to share knowledge between organizations in specific verticals?",
+      options: ["DHS", "SANS", "CERTs", "ISACs"], correct: 3,
+      explanation: "Information Sharing and Analysis Centers (ISACs) were created to help infrastructure owners and operators share threat information and provide tools and assistance to their members." },
+    { q: "Which of the following threat actors typically has the greatest access to resources?",
+      options: ["Nation-state actors", "Organized crime", "Hacktivists", "Insider threats"], correct: 0,
+      explanation: "Nation-state actors are government-sponsored and typically have the greatest access to resources, including tools, money, and talent." },
+    { q: "Wendy is scanning cloud-based repositories for sensitive information. Which finding should concern her MOST if discovered in a public repository?",
+      options: ["Product manuals", "Source code", "API keys", "Open source data"], correct: 2,
+      explanation: "API keys should never be found in public repositories because they may grant unauthorized individuals access to services and data. This is a critical security finding." },
+    { q: "Vince received hash values of malicious software found on other firms' systems after a compromise. What term best describes this information?",
+      options: ["Vulnerability feed", "Indicator of Compromise (IoC)", "TTP", "RFC"], correct: 1,
+      explanation: "Specific details of attacks (like file hashes) that may be used to identify compromises are Indicators of Compromise (IoCs). While also describable as TTPs, file signatures more closely match IoC definition." },
+    { q: "Ursula discovered developers sharing information over an unapproved cloud messaging tool. What term best describes this?",
+      options: ["Shadow IT", "System integration", "Vendor management", "Data exfiltration"], correct: 0,
+      explanation: "Using unapproved technology for business purposes is the classic definition of Shadow IT. There's no indication of data security compromise, so Shadow IT is a better description than data exfiltration." },
+    { q: "Tom's CRM vendor is discontinuing support. What should concern Tom MOST from a security perspective?",
+      options: ["Unavailability of future patches", "Lack of technical support", "Theft of customer information", "Increased costs"], correct: 0,
+      explanation: "Running unsupported software exposes the organization to the risk of new, unpatchable vulnerabilities. Without vendor support, newly discovered flaws cannot be remediated through patches." },
+    { q: "Which one of the following information sources would NOT be considered an OSINT source?",
+      options: ["DNS lookup", "Search engine research", "Port scans", "WHOIS queries"], correct: 2,
+      explanation: "Port scans are an active reconnaissance technique that probes target systems and would not be considered open source intelligence (OSINT). DNS lookups, search engines, and WHOIS queries are all passive/open source." },
+    { q: "What type of assessment is particularly useful for identifying insider threats?",
+      options: ["Behavioral", "Instinctual", "Habitual", "IoCs"], correct: 0,
+      explanation: "Behavioral assessments are useful for identifying insider threats. Since insider threats are hard to distinguish from normal behavior, context like after-hours logins, credential misuse, and abnormal patterns are key indicators." },
+  ],
+  "book-ch3": [
+    { q: "Ryan wants to prevent logic bombs created by insider threats from making it into production. What would be MOST effective?",
+      options: ["Antivirus software", "Code review", "EDR solutions", "Network monitoring"], correct: 1,
+      explanation: "Logic bombs are embedded in code, so code review is the most effective prevention. Antivirus and EDR are unlikely to detect custom logic bombs created by internal staff." },
+    { q: "Amanda notices traffic between her systems and a known malicious host on TCP port 6667. What type of traffic is she most likely detecting?",
+      options: ["Command and control (C&C)", "Spyware", "A worm", "A hijacked web browser"], correct: 0,
+      explanation: "Port 6667 is commonly associated with IRC (Internet Relay Chat), which is frequently used as a botnet command and control channel. Spyware typically uses HTTP/HTTPS, and hijacked browsers use ports 80/443." },
+    { q: "Mike discovers software allowing attackers remote access to systems on his network. How should he classify this malware?",
+      options: ["A worm", "Crypto malware", "A trojan", "A backdoor"], correct: 3,
+      explanation: "Remote access to a system is typically provided by a backdoor. Backdoors may appear in firmware or hardware and are designed to provide persistent unauthorized remote access." },
+    { q: "A system displays a message demanding Bitcoin payment and claims data has been encrypted. What type of malware is this?",
+      options: ["Worms", "A virus", "Ransomware", "Rootkit"], correct: 2,
+      explanation: "Ransomware demands payment while typically using encryption to make data inaccessible. The demand for cryptocurrency payment is a hallmark of ransomware attacks." },
+    { q: "Rick's antimalware scan shows no malware, but other data indicates a rootkit infection. What should be his next step?",
+      options: ["Rerun the antimalware scan", "Mount the drive on another system and scan it", "Disable the antivirus", "The system is not infected"], correct: 1,
+      explanation: "Rootkits hide from locally run antimalware scanners. Mounting the drive in another system in read-only mode or booting from a known-good USB and scanning can effectively detect rootkit infections." },
+    { q: "A terminated developer claims they left code that will delete files if they're not employed. What type of malware is this?",
+      options: ["Ransomware", "Extortionware", "A logic bomb", "A Trojan"], correct: 2,
+      explanation: "A logic bomb is malicious code that activates when a specific trigger occurs. Here the trigger is the developer no longer being employed. Logic bombs are embedded in code and activate on specific conditions." },
+    { q: "What is the key difference between a worm and a virus?",
+      options: ["Operating system", "How they spread", "Potential impact", "Number of infections"], correct: 1,
+      explanation: "Worms spread themselves autonomously via networks, while viruses rely on human interaction (opening files, running programs) to propagate. This self-propagation is the defining distinction." },
+    { q: "What type of malware connects to a command and control system, allowing attackers to manage, control, and update it remotely?",
+      options: ["A bot", "A drone", "A vampire", "A worm"], correct: 0,
+      explanation: "Bots connect to command and control (C&C) systems, allowing them to be updated, controlled, and managed remotely. Collections of bots form botnets. Worms spread via vulnerabilities but don't necessarily have C&C." },
+  ],
   "all": [] // populated dynamically
 };
 
@@ -739,6 +832,27 @@ function renderQuiz() {
             </div>
           </div>`;
       }).join("")}
+
+      <div style="grid-column:1/-1;margin-top:12px"><h2 style="color:var(--accent2);font-size:18px;border-bottom:1px solid var(--bg3);padding-bottom:8px">Chapple/Seidl Study Guide Questions</h2></div>
+
+      <div class="card" onclick="startQuiz('book-ch1')">
+        <div class="card-icon">&#128214;</div>
+        <h3>Ch1: Security Professional</h3>
+        <p>${(QUIZZES["book-ch1"]||[]).length} review questions. CIA triad, controls, risk types, DLP, encryption.</p>
+        <div class="card-meta"><span class="badge badge-domain1">Domain 1</span></div>
+      </div>
+      <div class="card" onclick="startQuiz('book-ch2')">
+        <div class="card-icon">&#128214;</div>
+        <h3>Ch2: Threat Landscape</h3>
+        <p>${(QUIZZES["book-ch2"]||[]).length} review questions. Threat actors, APTs, ISACs, OSINT, Shadow IT.</p>
+        <div class="card-meta"><span class="badge badge-domain2">Domain 2</span></div>
+      </div>
+      <div class="card" onclick="startQuiz('book-ch3')">
+        <div class="card-icon">&#128214;</div>
+        <h3>Ch3: Malicious Code</h3>
+        <p>${(QUIZZES["book-ch3"]||[]).length} review questions. Malware types, rootkits, logic bombs, botnets.</p>
+        <div class="card-meta"><span class="badge badge-domain2">Domain 2</span></div>
+      </div>
     </div>
   `;
 }
